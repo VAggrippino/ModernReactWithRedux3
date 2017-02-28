@@ -1,0 +1,95 @@
+td, th {
+  vertical-align: middle !important;
+  text-align: center !important;
+}
+
+.input-group {
+  margin: 20px 0px;
+}
+
+svg {
+  height: 150px;
+}
+
+td:first-of-type, td:first-of-type > div {
+  height: 200px;
+  width: 250px;
+}
+
+body:after {
+  content: '';
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: transparent;
+  z-index: 50;
+}
+
+body.nokey:after {
+  display: block;
+  background-color: slategray;
+  opacity: 0.5;
+}
+
+.apiKeyRequest {
+  border: 3px outset gray;
+  display: none;
+  background: silver;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+body.nokey .apiKeyRequest {
+  display: inline-block;
+}
+
+.apiKeyRequest .title {
+  background-color: #060;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: white;
+  padding: 3px 8px;
+  text-align: center;
+}
+
+.apiKeyField {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.apiKeyRequest input,
+.apiKeyRequest button {
+  font-size: 1.5rem;
+  border: 1px solid gray;
+}
+
+.apiKeyRequest input {
+  margin: 1rem 0 1rem 1rem;
+  width: 20em;
+  text-align: center;
+  border-right: none;
+  border-radius: 5px 0 0 5px;
+}
+
+.apiKeyRequest button {
+  margin: 0 1rem 0 0;
+  border-left: none;
+  border-radius: 0 5px 5px 0;
+}
+
+.deleteKey {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+body.nokey .deleteKey {
+  display: none;
+}
