@@ -1,9 +1,10 @@
-td, th {
-  vertical-align: middle !important;
-  text-align: center !important;
+.weatherList td,
+.weatherList th {
+  vertical-align: middle;
+  text-align: center;
 }
 
-.input-group {
+.citySearch.input-group {
   margin: 20px 0px;
 }
 
